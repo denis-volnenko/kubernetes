@@ -29,3 +29,16 @@ spec:
     - port: 8080
   selector:
     app: time-server
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: time-server-ingress
+spec:
+  rules:
+    - host: time.volnenko.ru
+      http:
+        paths:
+          - backend:
+              serviceName: time-server-service
+              servicePort: 8080
