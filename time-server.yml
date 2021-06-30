@@ -17,6 +17,7 @@ spec:
         image: volnenko/time-server:latest
         ports:
         - containerPort: 8080
-          hostPort: 9090
+          # hostPort: 9090
+          nodePort: 9090
           protocol: TCP
 
