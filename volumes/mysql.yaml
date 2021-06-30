@@ -111,3 +111,6 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
+  externalIPs:
+    - 95.217.177.1
+
