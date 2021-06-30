@@ -51,3 +51,15 @@ spec:
           operator: In
           values:
           - worker-1
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-worker-1-mysql
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  volumeName: pv-worker-1-mysql
