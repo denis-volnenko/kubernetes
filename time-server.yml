@@ -26,7 +26,6 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 9090
-      nodePort: 30000
+    - port: 8080
   selector:
     app: time-server
