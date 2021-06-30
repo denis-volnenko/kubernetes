@@ -1,12 +1,12 @@
 ## APPLY CONFIG
 
 ```
-kubectl apply -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yml
+kubectl apply -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yaml
 ```
 
 ## DELETE CONFIG
 ```
-kubectl delete -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yml
+kubectl delete -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yaml
 ```
 
 ## SHOW PV
