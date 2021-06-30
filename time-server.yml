@@ -27,5 +27,6 @@ spec:
   type: LoadBalancer
   ports:
     - port: 9090
+      nodePort: 7070
   selector:
     app: time-server
