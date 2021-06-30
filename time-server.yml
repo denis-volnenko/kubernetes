@@ -18,4 +18,15 @@ spec:
         ports:
         - containerPort: 8080
           protocol: TCP
-
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: time-server-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 9090
+  selector:
+    matchLabels:
+      app: time-server
