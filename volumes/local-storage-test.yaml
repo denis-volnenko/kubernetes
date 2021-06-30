@@ -9,7 +9,7 @@ volumeBindingMode: WaitForFirstConsumer
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-local-node-1
+  name: pv-worker-1-test
 spec:
   capacity:
     storage: 10Gi
@@ -19,7 +19,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   local:
-    path: /volumes
+    path: /volumes/test
   nodeAffinity:
     required:
       nodeSelectorTerms:
