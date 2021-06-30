@@ -28,4 +28,4 @@ spec:
   ports:
     - port: 9090
   selector:
-      app: time-server
+    app: time-server
