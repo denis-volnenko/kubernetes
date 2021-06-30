@@ -15,6 +15,12 @@ kubectl delete -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yml
 kubectl get pv
 ```
 
+## SHOW PVC
+
+```
+kubectl get pvc
+```
+
 ## SHOW PODS
 
 ```
