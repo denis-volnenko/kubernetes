@@ -23,3 +23,17 @@ spec:
             port:
               number: 8080
         pathType: ImplementationSpecific
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ingress-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: ingress-gateway
+  externalIPs:
+    - 95.217.177.1
+
