@@ -1,11 +1,22 @@
 ---
-kind: Service
-apiVersion: v1
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
-  name: time-server-ingress-service
+  name: test-ingress
 spec:
-  type: LoadBalancer
-  selector:
-    app: time-server-ingress-balancer
-  externalIPs:
-    - 65.21.108.81
+  defaultBackend:
+    service:
+      name: test
+      port:
+        number: 80
+#---
+#kind: Service
+#apiVersion: v1
+#metadata:
+#  name: time-server-ingress-service
+#spec:
+#  type: LoadBalancer
+#  selector:
+#    app: time-server-ingress-balancer
+#  externalIPs:
+#    - 65.21.108.81
