@@ -8,6 +8,13 @@ https://infoit.com.ua/linux/kak-ustanovit-kubernetes-na-ubuntu-20-04-lts/
 
 https://serveradmin.ru/hranilishha-dannyh-persistent-volumes-v-kubernetes/
 
+## DEPLOY FLANNEL
+
+```
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
+```
+
 ## DEPLOY INGRESS CONTROLLER
 
 ```
