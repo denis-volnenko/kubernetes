@@ -22,6 +22,6 @@ spec:
   ports:
     - port: 80
   selector:
-    app: time-server-service
+    name: time-server-service
   externalIPs:
     - 65.21.108.81
