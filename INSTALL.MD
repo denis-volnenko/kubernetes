@@ -18,6 +18,10 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ## DEPLOY INGRESS CONTROLLER
 
 ```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/website/main/content/en/examples/service/networking/ingress-resource-backend.yaml
+``
+
+```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/baremetal/deploy.yaml
 kubectl describe service -n ingress-nginx ingress-nginx-controller
 ```
