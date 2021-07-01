@@ -2,12 +2,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: time-server-ingress
+  name: time-server-ingress-service
 spec:
   type: LoadBalancer
   ports:
     - port: 80
   selector:
-    app: time-server
+    app: time-server-ingress-balancer
   externalIPs:
     - 65.21.108.81
