@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   #annotations:
-  #name: ingress-nginx-controller
+  name: ingress-nginx-controller-custom
   #namespace: ingress-nginx
 spec:
   type: LoadBalancer
@@ -17,4 +17,6 @@ spec:
       protocol: TCP
       targetPort: https
   selector:
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/component: controller
