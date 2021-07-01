@@ -1,8 +1,7 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: etworking.k8s.io/v1
 kind: Ingress
 metadata:
   name: time-server-ingress
-  namespace: time-server-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
