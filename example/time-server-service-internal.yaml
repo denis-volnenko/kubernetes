@@ -3,6 +3,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: time-server-service
+  matchLabels:
+    app: time-server-service
 spec:
   type: LoadBalancer
   # type: NodePort
