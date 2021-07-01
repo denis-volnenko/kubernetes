@@ -10,5 +10,3 @@ spec:
       targetPort: 8080
   selector:
     app: time-server
-  externalIPs:
-    - 65.21.108.81
