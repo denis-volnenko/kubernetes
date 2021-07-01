@@ -10,6 +10,16 @@ spec:
     - 65.21.108.81
     - 65.21.57.112
   rules:
+  - host: tomcat.volnenko.ru
+    http:
+      paths:
+      - path: /    
+        pathType: Prefix    
+        backend:
+          service:
+            name: tomcat-service
+            port:
+              number: 80
   - host: time.volnenko.ru
     http:
       paths:
