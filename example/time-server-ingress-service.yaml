@@ -6,7 +6,7 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: test
+      name: time-server-service
       port:
         number: 80
 #---
