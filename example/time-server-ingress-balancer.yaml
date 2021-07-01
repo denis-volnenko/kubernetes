@@ -2,8 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: time-server-ingress-balancer
-  labels:
-    app: time-server-ingress-balancer
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
@@ -11,8 +9,7 @@ spec:
   - host: time.volnenko.ru
     http:
       paths:
-      - path: /
-        pathType: Prefix
+      - path: /        
         backend:
           service:
             name: time-server-service
