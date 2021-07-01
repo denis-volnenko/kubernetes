@@ -13,3 +13,6 @@ spec:
   selector:
     k8s-app: nginx-ingress-controller
   type: LoadBalancer
+  externalIPs:
+    - 65.21.108.81
+
