@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: time-server-deployment
+spec:
+  selector:
+    matchLabels:
+      app: time-server
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: time-server
+    spec:
+      containers:
+      - name: time-server
+        image: volnenko/time-server:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
