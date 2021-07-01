@@ -23,6 +23,6 @@ spec:
     - port: 80
       targetPort: 80
   selector:
-    app: test-ingress
+    app: time-server-service
   externalIPs:
     - 65.21.108.81
