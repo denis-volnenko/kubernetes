@@ -12,14 +12,14 @@ spec:
       name: time-server-service
       port:
         number: 80
-#---
-#kind: Service
-#apiVersion: v1
-#metadata:
-#  name: time-server-ingress-service
-#spec:
-#  type: LoadBalancer
-#  selector:
-#    app: time-server-ingress-balancer
-#  externalIPs:
-#    - 65.21.108.81
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-ingress
+spec:
+  type: LoadBalancer
+  selector:
+    app: test-ingress
+  externalIPs:
+    - 65.21.108.81
