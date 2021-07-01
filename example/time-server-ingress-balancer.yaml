@@ -9,7 +9,8 @@ spec:
   - host: time.volnenko.ru
     http:
       paths:
-      - path: /        
+      - path: /    
+        pathType: Prefix    
         backend:
           service:
             name: time-server-service
