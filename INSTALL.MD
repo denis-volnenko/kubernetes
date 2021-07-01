@@ -7,3 +7,10 @@ https://infoit.com.ua/linux/kak-ustanovit-kubernetes-na-ubuntu-20-04-lts/
 ## НАСТРОЙКА ХРАНИЛИЩ
 
 https://serveradmin.ru/hranilishha-dannyh-persistent-volumes-v-kubernetes/
+
+## DEPLOY INGRESS CONTROLLER
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/baremetal/deploy.yaml
+```
+
