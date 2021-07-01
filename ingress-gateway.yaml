@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.class: "gce"
 spec:
   externalIPs:
-    - 
+    - 95.217.177.1
   rules:
   - host: tomcat.volnenko.ru
     http:
