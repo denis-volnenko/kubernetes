@@ -13,6 +13,7 @@ spec:
             name: tomcat-service
             port:
               number: 8080
+        pathType: ImplementationSpecific
   - host: time.volnenko.ru
     http:
       paths:
@@ -21,3 +22,4 @@ spec:
             name: time-server-service
             port:
               number: 8080
+        pathType: ImplementationSpecific
