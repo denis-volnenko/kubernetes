@@ -9,6 +9,11 @@ kubectl apply -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yaml
 kubectl delete -f  https://gitlab.com/volnenko/kuber/-/raw/main/time-server.yaml
 ```
 
+## SHOW PODS
+```
+kubectl get pods --all-namespaces
+```
+
 ## SHOW PV
 
 ```
