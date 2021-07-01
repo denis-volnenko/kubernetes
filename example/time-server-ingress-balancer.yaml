@@ -17,6 +17,16 @@ spec:
             name: tomcat-service
             port:
               number: 80
+  - host: date.volnenko.ru
+    http:
+      paths:
+      - path: /    
+        pathType: Prefix    
+        backend:
+          service:
+            name: time-server-service
+            port:
+              number: 80
   - host: time.volnenko.ru
     http:
       paths:
