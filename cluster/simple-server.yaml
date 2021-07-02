@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: simple-server
-          image: phpmyadmin/phpmyadmin
+          image: volnenko/simple-server:latest
           ports:
             - containerPort: 8080
           env:
