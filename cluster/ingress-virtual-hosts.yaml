@@ -24,7 +24,7 @@ spec:
         pathType: Prefix    
         backend:
           service:
-            name: simple-service
+            name: simple-server-service
             port:
               number: 80
   - host: tomcat.master.kubernetes.volnenko.ru
