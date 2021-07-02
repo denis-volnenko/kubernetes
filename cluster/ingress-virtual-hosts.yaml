@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: tomcat.k8s.volnenko.ru
+  - host: tomcat.master.k8s.volnenko.ru
     http:
       paths:
       - path: /    
@@ -17,7 +17,7 @@ spec:
             name: tomcat-service
             port:
               number: 80
-  - host: time.k8s.volnenko.ru
+  - host: time.master.k8s.volnenko.ru
     http:
       paths:
       - path: /    
