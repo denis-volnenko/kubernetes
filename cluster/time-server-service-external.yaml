@@ -12,3 +12,4 @@ spec:
     app: time-server
   externalIPs:
     - 65.21.108.81
+    - 95.217.177.1
