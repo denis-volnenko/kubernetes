@@ -17,6 +17,16 @@ spec:
             name: phpmyadmin-service
             port:
               number: 80
+  - host: simple.master.kubernetes.volnenko.ru
+    http:
+      paths:
+      - path: /    
+        pathType: Prefix    
+        backend:
+          service:
+            name: simple-service
+            port:
+              number: 80
   - host: tomcat.master.kubernetes.volnenko.ru
     http:
       paths:
