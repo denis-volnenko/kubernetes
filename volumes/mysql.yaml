@@ -97,7 +97,7 @@ spec:
             - name: PMA_PORT
               value: "3306"
             - name: MYSQL_ROOT_PASSWORD
-              value: "root"
+              value: "password"
 ---
 apiVersion: v1
 kind: Service
