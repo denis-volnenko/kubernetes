@@ -9,4 +9,4 @@ kubectl apply -f  https://gitlab.com/volnenko/kuber/-/raw/main/example/01-time-s
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/02-time-server-service-external.yaml
 ```
-ПРОВЕРИТЬ ДОСТУПНОСТЬ TIMESERVER НА ВНЕШЕНЕМ IP И ПОРТЕ 80
+ПРОВЕРИТЬ ДОСТУПНОСТЬ TIMESERVER НА ВНЕШЕНЕМ IP (ПОРТ 80)
