@@ -102,10 +102,25 @@ EOT
 systemctl restart docker
 ```
 
-УСТАНОВКА KUBERNATES
+ДОБАВЛЕНИЕ КЛЮЧА ДЛЯ ЦИФРОВОЙ ПОДПИСИ РЕПОЗИТОРИЯ
+
 ```
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
+```
+
+ДОБАВЛЕНИЕ РЕПОЗИТОРИЯ С КОМПОНЕНТАМИ KUBERNATES
+
+```
 apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+```
+
+УСТАНОВКА КОМПОНЕНТОВ KUBERNATES
+
+```
 apt-get install -y kubeadm kubelet kubectl kubernetes-cni
+```
+
+ЗАПРЕТ ОБНОВЛЕНИЯ КОМПОНЕНТОВ KUBERNATES
+```
 apt-mark hold kubelet kubeadm kubectl kubernetes-cni
 ```
