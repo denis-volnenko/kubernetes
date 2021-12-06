@@ -63,3 +63,7 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/08-tomcat-
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/09-mysql-persistence-volume.yaml
 ```
+
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/10-mysql-persistence-volume-claim.yaml
+```
