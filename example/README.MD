@@ -55,3 +55,5 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/07-tomcat-
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/08-tomcat-ingress-virtual-host.yaml
 ```
+
+ПРОЕРИТЬ ДОСТУПНОСТЬ TOMCAT ПО URL: http://tomcat.master.kubernetes.volnenko.ru
