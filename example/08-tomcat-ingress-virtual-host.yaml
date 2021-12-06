@@ -1,1 +1,19 @@
-
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-virtual-hosts
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:   
+  - host: tomcat.master.kubernetes.volnenko.ru
+    http:
+      paths:
+      - path: /    
+        pathType: Prefix    
+        backend:
+          service:
+            name: tomcat-service
+            port:
+              number: 80
