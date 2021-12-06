@@ -22,3 +22,8 @@ hostnamectl set-hostname master.kubernates.volnenko.ru
 ```
 swapoff -a
 ```
+
+```
+echo "br_netfilter" > /etc/modules-load.d/k8s.conf
+echo "overlay" >> /etc/modules-load.d/k8s.conf
+```
