@@ -49,3 +49,5 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/06-tomcat-
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/07-tomcat-service-internal.yaml
 ```
+
+09. ПРИМЕНИТЬ КОНФИГУРАЦИЮ INGRESS CONTROLLER ДЛЯ VHOST TOMCAT
