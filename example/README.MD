@@ -51,3 +51,7 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/07-tomcat-
 ```
 
 09. ПРИМЕНИТЬ КОНФИГУРАЦИЮ INGRESS CONTROLLER ДЛЯ VHOST TOMCAT
+
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/08-tomcat-ingress-virtual-host.yaml
+```
