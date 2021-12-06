@@ -44,3 +44,8 @@ curl http://time.master.kubernetes.volnenko.ru
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/06-tomcat-deployment.yaml
 ```
 
+08. 
+
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/07-tomcat-service-internal.yaml
+```
