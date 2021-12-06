@@ -18,3 +18,8 @@ kubectl delete -f https://gitlab.com/volnenko/kuber/-/raw/main/example/02-time-s
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/03-time-server-service-internal.yaml
 ```
+
+05. ПРИМЕНИТЬ СОЗДАНИЕ INGRESS CONTROLLER ВНУТРИ КЛАСТЕРА
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/04-ingress-controller-external.yaml
+```
