@@ -7,13 +7,13 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:   
-  - host: timeserver.master.kubernetes.volnenko.ru
+  - host: time.master.kubernetes.volnenko.ru
     http:
       paths:
       - path: /    
         pathType: Prefix    
         backend:
           service:
-            name: timeserver-server-service
+            name: time-server-service
             port:
               number: 80
