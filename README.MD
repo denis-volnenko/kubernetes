@@ -35,6 +35,7 @@ kubectl get pods
 ## SHOW SERVICES
 ```
 kubectl get services
+kubectl get svc --all-namespaces
 ```
 
 ## SHOW NAMESPACES
