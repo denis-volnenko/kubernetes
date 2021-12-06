@@ -17,3 +17,8 @@ apt-get install -y mc curl fail2ban apt-transport-https ntpdate
 ```
 hostnamectl set-hostname master.kubernates.volnenko.ru
 ```
+
+РАЗОВОЕ ОТКЛЮЧЕНИЕ ФАЙЛА ПОДКАЧКИ
+```
+swapoff -a
+```
