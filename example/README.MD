@@ -37,3 +37,10 @@ curl http://time.master.kubernetes.volnenko.ru
 ```
 
 # 02. РАЗВОРАЧИВАНИЕ TOMCAT 8
+
+07. ПРИМЕНИТЬ DEPLOYMENT STATELESS TOMCAT
+
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/06-tomcat-deployment.yaml
+```
+
