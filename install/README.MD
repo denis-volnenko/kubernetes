@@ -23,7 +23,20 @@ hostnamectl set-hostname master.kubernates.volnenko.ru
 swapoff -a
 ```
 
+ЗАГРУЗКА ДОПОЛНИТЕЛЬНЫХ МОДУЛЕЙ ЯДРА
+
 ```
 echo "br_netfilter" > /etc/modules-load.d/k8s.conf
 echo "overlay" >> /etc/modules-load.d/k8s.conf
+```
+
+ЗАГРУЗКА МОДУЛЕЙ ЯДРА 
+```
+modprobe overlay
+modprobe br_netfilter
+```
+
+ПРОВЕРКА РАБОТЫ ДОПОЛНИТЕЛЬНЫХ МОДЕЛЕЙ ЯДРА
+```
+lsmod | egrep "br_netfilter|overlay"
 ```
