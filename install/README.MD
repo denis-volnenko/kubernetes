@@ -140,6 +140,11 @@ kubectl version --client
 
 ## 1.4. CLUSTER
 
+ПРЕДВАРИТЕЛЬНАЯ ЗАГРУЗКА ОБРАЗОВ KUBERNATES
+```
+kubeadm config images pull
+```
+
 СОЗДАНИЕ КЛАСТЕРА KUBERNATES
 
 ```
