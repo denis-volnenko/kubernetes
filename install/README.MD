@@ -79,7 +79,7 @@ systemctl enable docker
 ```
 
 ```
-cat <<EOT >> /etc/docker/daemon.json
+tee -a /etc/docker/daemon.json > /dev/null <<EOT
 {
   "exec-opts": ["native.cgroupdriver=systemd"],
   "log-driver": "json-file",
@@ -91,5 +91,5 @@ cat <<EOT >> /etc/docker/daemon.json
     "overlay2.override_kernel_check=true"
   ]
 }
-EOT 
+EOT
 ```
