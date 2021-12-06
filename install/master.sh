@@ -8,7 +8,7 @@ sudo apt-get install -y docker.io
 sudo timedatectl set-timezone Europe/Samara
 sudo apt-get install -y ntp
 
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
 apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 apt-get install -y kubeadm kubelet kubectl kubernetes-cni
 
