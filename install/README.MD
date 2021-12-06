@@ -12,6 +12,12 @@ apt-get update && apt-get upgrade
 apt-get install -y mc curl fail2ban apt-transport-https ntpdate
 ```
 
+УСТАНОВКА ВРЕМЕННОЙ ЗОНЫ
+
+```
+timedatectl set-timezone Europe/Samara
+```
+
 УСТАНОВКА НАЗВАНИЯ ХОСТА
 
 ```
