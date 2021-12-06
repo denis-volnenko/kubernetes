@@ -36,4 +36,4 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/05-time-se
 curl http://time.master.kubernetes.volnenko.ru
 ```
 
-# 02. РАЗВОРАЧИВАНИЕ TOMCAT
+# 02. РАЗВОРАЧИВАНИЕ TOMCAT 8
