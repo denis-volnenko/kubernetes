@@ -27,5 +27,4 @@ spec:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/component: controller
   externalIPs:
-    - 65.21.57.112
-    - 95.217.177.1
+    - 65.108.149.85
