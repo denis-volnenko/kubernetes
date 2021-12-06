@@ -18,6 +18,12 @@ apt-get install -y mc curl fail2ban apt-transport-https ntpdate
 timedatectl set-timezone Europe/Samara
 ```
 
+УСТАНОВКА СИНХРОНИЗАЦИИ ВРЕМЕНИ
+
+```
+apt-get install -y ntp
+```
+
 УСТАНОВКА НАЗВАНИЯ ХОСТА
 
 ```
