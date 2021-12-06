@@ -75,3 +75,7 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/11-mysql-d
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/12-mysql-service-internal.yaml
 ```
+
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/13-phpmyadmin-deployment.yaml
+```
