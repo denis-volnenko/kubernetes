@@ -137,3 +137,11 @@ apt-mark hold kubelet kubeadm kubectl kubernetes-cni
 ```
 kubectl version --client
 ```
+
+## 1.4. CLUSTER
+
+СОЗДАНИЕ КЛАСТЕРА KUBERNATES
+
+```
+kubeadm init --pod-network-cidr=10.244.0.0/16
+```
