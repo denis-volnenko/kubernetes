@@ -1,5 +1,7 @@
 # INSTALL MASTER
 
+## NETWORK
+
 ОБНОВЛЕНИЕ ПАКЕТОВ
 
 ```
@@ -66,6 +68,8 @@ echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf
 sysctl --system
 ```
 
+## DOCKER
+
 УСТАНОВКА DOCKER
 
 ```
@@ -101,6 +105,8 @@ EOT
 ```
 systemctl restart docker
 ```
+
+## KUNERNATES
 
 ДОБАВЛЕНИЕ КЛЮЧА ДЛЯ ЦИФРОВОЙ ПОДПИСИ РЕПОЗИТОРИЯ
 
