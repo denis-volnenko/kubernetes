@@ -71,3 +71,9 @@ sysctl --system
 ```
 apt-get install -y docker docker.io
 ```
+
+ДОБАВЛЕНИЕ DOCKER В АВТОЗАПУСК
+
+```
+systemctl enable docker
+```
