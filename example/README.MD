@@ -60,3 +60,6 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/08-tomcat-
 
 # 03. РАЗВОРАЧИВАНИЕ MYSQL 5
 
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/09-mysql-persistence-volume.yaml
+```
