@@ -40,3 +40,10 @@ modprobe br_netfilter
 ```
 lsmod | egrep "br_netfilter|overlay"
 ```
+
+СОЗДАНИЕ КОНФИГУРАЦИЮ ОБРАБОТКИ ТРАФИКА
+
+```
+echo "net.bridge.bridge-nf-call-ip6tables = 1" > /etc/sysctl.d/k8s.conf 
+echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf 
+```
