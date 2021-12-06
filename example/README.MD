@@ -13,3 +13,8 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/02-time-se
 ```
 kubectl delete -f https://gitlab.com/volnenko/kuber/-/raw/main/example/02-time-server-service-external.yaml
 ```
+
+04. ПРИМЕНИТЬ СОЗДАНИЕ ВНУТРЕННЕГО СЕРВИСА ДЛЯ ДОСТУПА К TIMESERVER
+```
+
+```
