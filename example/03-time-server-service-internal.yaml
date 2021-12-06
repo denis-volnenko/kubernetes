@@ -1,0 +1,15 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: time-server-service
+  labels:
+    app: time-server-service
+spec:
+  type: LoadBalancer
+  # type: NodePort
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: time-server
