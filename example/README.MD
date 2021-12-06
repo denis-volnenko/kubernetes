@@ -16,5 +16,5 @@ kubectl delete -f https://gitlab.com/volnenko/kuber/-/raw/main/example/02-time-s
 
 04. ПРИМЕНИТЬ СОЗДАНИЕ ВНУТРЕННЕГО СЕРВИСА ДЛЯ ДОСТУПА К TIMESERVER
 ```
-
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/03-time-server-service-internal.yaml
 ```
