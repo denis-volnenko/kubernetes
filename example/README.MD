@@ -1,4 +1,4 @@
-# 01 РАЗВОРАЧИВАНИЕ TIMESERVER
+# 01. РАЗВОРАЧИВАНИЕ TIMESERVER
 
 01. ПРИМЕНИТЬ DEPLOYMENT STATELESS TIMESERVER
 ```
@@ -36,4 +36,4 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/05-time-se
 curl http://time.master.kubernetes.volnenko.ru
 ```
 
-# 02 РАЗВОРАЧИВАНИЕ TOMCAT
+# 02. РАЗВОРАЧИВАНИЕ TOMCAT
