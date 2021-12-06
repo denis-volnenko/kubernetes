@@ -95,3 +95,9 @@ tee -a /etc/docker/daemon.json > /dev/null <<EOT
 }
 EOT
 ```
+
+ПЕРЕЗАПУСК DOCKER 
+
+```
+systemctl restart docker
+```
