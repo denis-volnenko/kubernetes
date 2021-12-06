@@ -3,7 +3,7 @@
 ОБНОВЛЕНИЕ ПАКЕТОВ
 
 ```
-sudo apt-get update
+apt-get update
 ```
 
 УСТАНОВКА СИСТЕМНЫХ УТИЛИТ
