@@ -65,3 +65,9 @@ echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf
 ```
 sysctl --system
 ```
+
+УСТАНОВКА DOCKER
+
+```
+apt-get install -y docker docker.io
+```
