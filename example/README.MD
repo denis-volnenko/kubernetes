@@ -23,3 +23,9 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/03-time-se
 ```
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/04-ingress-controller-external.yaml
 ```
+
+06. ПРИМЕНИТЬ КОНФИГУРАЦИЮ INGRESS CONTROLLER ДЛЯ VHOST TIMESERVER
+```
+kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/05-time-server-ingress-virtual-host.yaml
+```
+ПРОЕРИТЬ ДОСТУПНОСТЬ TIMESERVER ПО URL: http://time.master.kubernetes.volnenko.ru
