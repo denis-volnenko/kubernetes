@@ -127,6 +127,13 @@ apt-get install -y kubeadm kubelet kubectl kubernetes-cni
 ```
 
 ЗАПРЕТ ОБНОВЛЕНИЯ КОМПОНЕНТОВ KUBERNATES
+
 ```
 apt-mark hold kubelet kubeadm kubectl kubernetes-cni
+```
+
+ПРОВЕРКА УСТАНОВКИ KUBERNATES
+
+```
+kubectl version --client
 ```
