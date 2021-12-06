@@ -158,7 +158,7 @@ kubeadm join 65.108.149.85:6443 --token v513us.tjho0e9298cnhw96 \
 	--discovery-token-ca-cert-hash sha256:80bb881e8ad2c58053ae4e777fad774ec3bde48ff850137a68bd38c23d694eca 
 ```
 
-НАСТРОЙКА КОНФИГУРАЦИЙ 
+НАСТРОЙКА КОНФИГУРАЦИЙ KUBERNATES
 
 ```
 mkdir -p $HOME/.kube
