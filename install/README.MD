@@ -78,6 +78,8 @@ apt-get install -y docker docker.io
 systemctl enable docker
 ```
 
+НАСТРОЙКА CGROUPDRIVER ДЛЯ DOCKER
+
 ```
 tee -a /etc/docker/daemon.json > /dev/null <<EOT
 {
