@@ -58,4 +58,4 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/08-tomcat-
 
 ПРОВЕРИТЬ ДОСТУПНОСТЬ TOMCAT ПО URL: http://tomcat.master.kubernetes.volnenko.ru
 
-03. РАЗВОРАЧИВАНИЕ MYSQL 5
+# 03. РАЗВОРАЧИВАНИЕ MYSQL 5
