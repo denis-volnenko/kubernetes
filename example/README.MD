@@ -29,3 +29,7 @@ kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/04-ingress
 kubectl apply -f https://gitlab.com/volnenko/kuber/-/raw/main/example/05-time-server-ingress-virtual-host.yaml
 ```
 ПРОЕРИТЬ ДОСТУПНОСТЬ TIMESERVER ПО URL: http://time.master.kubernetes.volnenko.ru
+
+```
+curl http://time.master.kubernetes.volnenko.ru
+```
