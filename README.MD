@@ -42,3 +42,9 @@ kubectl get svc --all-namespaces
 ```
 kubectl get -n namespace services
 ```
+
+## SHOW NODES
+
+```
+kubectl get nodes --show-labels
+```
