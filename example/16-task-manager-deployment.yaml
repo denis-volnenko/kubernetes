@@ -27,3 +27,17 @@ spec:
               value: "3306"
             - name: MYSQL_ROOT_PASSWORD
               value: "password"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-manager-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: task-manager
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+
