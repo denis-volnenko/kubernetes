@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:   
-  - host: pma.master.kubernetes.volnenko.ru
+  - host: pma.volnenko.kubernetes
     http:
       paths:
       - path: /    
