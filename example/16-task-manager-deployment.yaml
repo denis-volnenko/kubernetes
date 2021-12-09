@@ -21,11 +21,11 @@ spec:
           ports:
             - containerPort: 8080
           env:
-            - name: PMA_HOST
-              value: mysql
-            - name: PMA_PORT
-              value: "3306"
-            - name: MYSQL_ROOT_PASSWORD
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql:3306/task-manager
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "root"
+            - name: SPRING_DATASOURCE_PASSWORD
               value: "password"
 ---
 apiVersion: v1
