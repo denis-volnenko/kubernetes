@@ -48,3 +48,9 @@ kubectl get -n namespace services
 ```
 kubectl get nodes --show-labels
 ```
+
+## SHOW INGRESS SERVICES
+
+```
+kubectl get svc -n ingress-nginx
+```
