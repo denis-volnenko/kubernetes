@@ -1,22 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-virtual-hosts
+  name: tomcat-ingress-virtual-hosts
   namespace: default
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:   
-  - host: time.master.kubernetes.volnenko.ru
-    http:
-      paths:
-      - path: /    
-        pathType: Prefix    
-        backend:
-          service:
-            name: time-server-service
-            port:
-              number: 80
   - host: tomcat.master.kubernetes.volnenko.ru
     http:
       paths:
