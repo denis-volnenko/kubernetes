@@ -1,3 +1,7 @@
+Kubernetes is not watching for a new version of the image. The image pull policy specifies how to acquire the image to run the container. Always means it will try to pull a new version each time it's starting a container. To see the update you'd need to delete the Pod (not the Deployment) - the newly created Pod will run the new image.
+
+There is no direct way to have Kubernetes automatically update running containers with new images. This would be part of a continuous delivery system (perhaps using kubectl set image with the new sha256sum or an image tag - but not latest).
+
 ## APPLY CONFIG
 
 ```
