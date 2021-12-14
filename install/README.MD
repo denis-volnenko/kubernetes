@@ -186,3 +186,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.5/a
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yam
 ```
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
+```
