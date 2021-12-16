@@ -190,3 +190,9 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/s
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
 ```
+
+УСТАНОВКА ARGO CD
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
