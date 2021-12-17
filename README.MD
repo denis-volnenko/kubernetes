@@ -64,3 +64,8 @@ kubectl get svc -n ingress-nginx
 ```
 kubectl top node -n kube-system
 ```
+
+## SHOW POD METRIX
+```
+kubectl top pod --sort-by memory
+```
