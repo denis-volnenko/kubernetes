@@ -58,3 +58,9 @@ kubectl get nodes --show-labels
 ```
 kubectl get svc -n ingress-nginx
 ```
+
+## SHOW NODE METRIX
+
+```
+kubectl top node -n kube-system
+```
