@@ -204,5 +204,5 @@ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/late
 
 УСТАНОВКА РЕПЛИКАТОРА СЕКРЕТОВ
 ```
- kubectl -n kube-system apply -f https://github.com/emberstack/kubernetes-reflector/releases/latest/download/reflector.yaml
+kubectl -n kube-system apply -f https://github.com/emberstack/kubernetes-reflector/releases/latest/download/reflector.yaml
 ```
