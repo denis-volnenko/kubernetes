@@ -69,3 +69,8 @@ kubectl top node -n kube-system
 ```
 kubectl top pod --sort-by memory
 ```
+
+## SHOW JOIN COMMAND
+```
+kubeadm token create --print-join-command
+```
