@@ -180,6 +180,13 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 ```
 
+ДОБАВЛЕНИЕ МЕТОК К НОДАМ КЛАСТЕРА
+
+```
+kubectl label nodes server1 kubernetes.io/role=worker
+kubectl label nodes server2 kubernetes.io/role=worker
+```
+
 РАЗВОРАЧИВАНИЕ КОМПОНЕНТОВ DASHBOARD
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.5/aio/deploy/recommended.yaml
