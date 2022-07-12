@@ -180,6 +180,12 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 ```
 
+РАЗВОРАЧИВАНИЕ METRIKS SERVER
+
+```
+kubectl apply -f https://raw.githubusercontent.com/denis-volnenko/kubernetes/main/metrics-server.yaml
+```
+
 ДОБАВЛЕНИЕ МЕТОК К НОДАМ КЛАСТЕРА
 
 ```
