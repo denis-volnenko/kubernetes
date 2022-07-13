@@ -33,5 +33,3 @@ spec:
             path: /volumes/mysql
             type: DirectoryOrCreate
       nodeName: worker1.k8s.volnenko
-      imagePullSecrets:
-      - name: regcred
