@@ -18,7 +18,7 @@ spec:
       nodeName: worker2.k8s.volnenko
       containers:
         - name: task-manager
-          image: volnenko/task-manager-spring-boot-primefaces
+          image: volnenko/task-manager-pf-crud
           ports:
             - containerPort: 8080
           env:
