@@ -15,6 +15,7 @@ spec:
       labels:
         app: task-manager
     spec:
+      nodeName: worker2.k8s.volnenko
       containers:
         - name: task-manager
           image: volnenko/task-manager-spring-boot-primefaces
