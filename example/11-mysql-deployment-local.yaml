@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: volnenko-ru
+  name: mysql-deployment
+spec:
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:8.0
+        args: ["--character-set-server=utf8", "--collation-server=utf8_general_ci"]
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: root
+          - name: TZ
+            value: UTC
+        volumeMounts:
+          - name: data-volume
+            mountPath: /var/lib/mysql
+      volumes:
+        - name: data-volume
+          hostPath:
+            path: /volumes/mysql
+            type: Directory
+      nodeName: volnenko-ru
+      imagePullSecrets:
+      - name: regcred
