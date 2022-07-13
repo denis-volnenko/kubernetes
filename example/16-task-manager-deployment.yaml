@@ -23,11 +23,11 @@ spec:
             - containerPort: 8080
           env:
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:mysql://mysql:3306/tm?createDatabaseIfNotExist=true
+              value: jdbc:mysql://mysql-service:3306/tm?createDatabaseIfNotExist=true
             - name: SPRING_DATASOURCE_USERNAME
               value: root
             - name: SPRING_DATASOURCE_PASSWORD
-              value: password
+              value: root
 ---
 apiVersion: v1
 kind: Service
