@@ -32,7 +32,7 @@ spec:
         - name: data-volume
           hostPath:
             path: /volumes/mysql
-            type: Directory
-      nodeName: volnenko-ru
+            type: DirectoryOrCreate
+      nodeName: worker1.k8s.volnenko
       imagePullSecrets:
       - name: regcred
